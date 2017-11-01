@@ -1,0 +1,96 @@
+#container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items:stretch;
+}
+
+.column {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  font-size: 5vmin;
+  line-height: 3vmin;
+}
+
+.photo {
+  width: 45vmin;
+  height: 45vmin;
+  background: url(../img/me.jpg) 50% 50% / contain no-repeat;
+  border-width: 0px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  border-radius: 50%;
+  margin: 21.5vmin 10vmin 4vmin auto;
+}
+
+.icons {
+  width: 45vmin;
+  height: 3.5vmin;
+  text-align: center;
+  margin: 3vmin 10vmin 17vmin auto;
+}
+
+.icons a {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  display: inline-block;
+  margin: 0px 1vmin;
+}
+
+.icon-gh {
+  animation-delay: 1.5s;
+  background: url(../img/gh.svg) 50% 50% no-repeat;
+}
+
+.icon-ln {
+  animation-delay: 1.5s;
+  background: url(../img/ln.svg) 50% 50% no-repeat;
+}
+
+.icon-tw {
+  animation-delay: 1.5s;
+  background: url(../img/tw.svg) 50% 50% no-repeat;
+}
+
+.heading {
+  max-width: 100vmin;
+  margin: auto auto auto 5vmin;
+}
+
+.contact {
+  font-family: "Roboto", serif;
+}
+
+.contact a {
+  font-weight: 100;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .heading {
+    text-align: center;
+  }
+  .photo, .icons {
+    margin-left: 5vmin;
+    margin-right: auto;
+  }
+}
